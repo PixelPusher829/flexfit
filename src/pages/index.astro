@@ -1,20 +1,34 @@
-<!DOCTYPE html>
+---
+import "../styles/global.css";
+import about from "../images/about.jpg";
+import personalTrainer from "../images/personal-trainer.jpg";
+import groupFitness from "../images/group-fitness.jpg";
+import nutrition from "../images/nutrition.jpg";
+import onlineFitness from "../images/online-fitness.jpg";
+import yoga from "../images/yoga.jpg";
+import sarah from "../images/sarah.jpg";
+import mark from "../images/mark.jpg";
+import jessica from "../images/jessica.jpg";
+import logo from "../images/logo.png";
+import logoLight from "../images/logo-light.png";
+---
+
 <html lang="en">
-  <head>
+	<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+	<meta name="generator" content={Astro.generator} />
     <title>FlexFit | Fitness Programs, Personal Training, and Wellness Services</title>
   </head>
   <body>
     <nav>
-      <a href="#home"><img src="./images/logo.png" class="logo" /></a>
+      <a href="#home"><img src={logo.src} class="logo" /></a>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#team">Our Team</a></li>
@@ -31,7 +45,7 @@
     </header>
     <section class="container" id="about">
       <div class="content left">
-        <img src="./images/about.jpg" alt="" />
+        <img src={about.src} alt="" />
       </div>
       <div class="content right">
         <h2>About Us</h2>
@@ -43,27 +57,27 @@
       <h2>Services</h2>
       <div class="content">
         <div class="service-block">
-          <img src="./images/personal-trainer.jpg" alt="" />
+          <img src={personalTrainer.src} alt="" />
           <h3>Personal Training</h3>
           <p>One-on-one fitness guidance tailored to your goals and needs.</p>
         </div>
         <div class="service-block">
-          <img src="./images/group-fitness.jpg" alt="" />
+          <img src={groupFitness.src} alt="" />
           <h3>Group Fitness Classes</h3>
           <p>Engaging and energetic workouts in a supportive group environment.</p>
         </div>
         <div class="service-block">
-          <img src="./images/nutrition.jpg" alt="" />
+          <img src={nutrition.src} alt="" />
           <h3>Nutrition Counseling</h3>
           <p>Expert advice to optimize your diet and fuel your workouts.</p>
         </div>
         <div class="service-block">
-          <img src="./images/online-fitness.jpg" alt="" />
+          <img src={onlineFitness.src} alt="" />
           <h3>Online Fitness Programs</h3>
           <p>Accessible workouts and coaching from the comfort of your home.</p>
         </div>
         <div class="service-block">
-          <img src="./images/yoga.jpg" alt="" />
+          <img src={yoga.src} alt="" />
           <h3>Yoga and Mindfulness</h3>
           <p>Enhance flexibility, strength, and mental well-being through mindful movement.</p>
         </div>
@@ -73,17 +87,17 @@
       <h2>Our team</h2>
       <div class="content">
         <div class="member">
-          <img src="./images/sarah.jpg" alt="" />
+          <img src={sarah.src} alt="" />
           <h3>Sarah Reynolds</h3>
           <p>Certified Personal Trainer</p>
         </div>
         <div class="member">
-          <img src="./images/mark.jpg" alt="" />
+          <img src={mark.src} alt="" />
           <h3>Mark Davis</h3>
           <p>Fitness Coach and Nutrition Specialist</p>
         </div>
         <div class="member">
-          <img src="./images/jessica.jpg" alt="" />
+          <img src={jessica.src} alt="" />
           <h3>Jessica Thompson</h3>
           <p>Group Fitness Instructor and Yoga Expert</p>
         </div>
@@ -104,7 +118,7 @@
           <i class="fi fi-rr-marker"></i>123 Main Street, City, State, ZIP
           <br />
         </div>
-        <img src="./images/logo-light.png" alt="" />
+        <img src={logoLight.src} alt="" />
       </div>
       <div class="copyright">
         <div class="container">FlexFit | Copyright 2023</div>
